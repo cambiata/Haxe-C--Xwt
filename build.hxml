@@ -1,19 +1,18 @@
 -cp src
 -main Main
 
--cs bin-cs
+-cs bin-linux
 
--D net-ver=40
+-D net-ver=45
 -D verbose
--D no-compilation
+#-D no-compilation
 
--c-arg /platform:x86
+#-c-arg /platform:x86
 
--net-lib C:\Program Files (x86)\Mono\lib\mono\4.0\mscorlib.dll
--net-lib C:\Program Files (x86)\Mono\lib\mono\4.0\System.Drawing.dll
--net-lib C:\Program Files (x86)\Mono\lib\mono\4.0\System.Xml.dll
--net-lib C:\Program Files (x86)\Mono\lib\mono\4.0\System.Xaml.dll
--net-lib Svg.dll
--net-lib Xwt.dll
--net-lib Xwt.Gtk.dll
+-net-lib dll-linux/System.Drawing.dll
+-net-lib dll-linux/System.Xml.dll
+-net-lib dll-linux/System.Xaml
+-net-lib dll-common/Svg.dll
+-net-lib dll-common/Xwt.dll
+-net-lib dll-common/Xwt.Gtk.dll
 
